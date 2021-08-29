@@ -3,6 +3,7 @@
 - Snowpack
 - Svelte
 - Svelte Navigator
+- Prettier with prettier-plugin-svelte
 - @snowpack/plugin-webpack for better prod-build performance
 
 ## Available Scripts
