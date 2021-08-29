@@ -9,6 +9,7 @@
     <nav>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
+        <Link to="/fsdfsdf">Non existing</Link>
     </nav>
     <div>
         <Route path="/" component={Home} />
