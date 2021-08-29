@@ -1,17 +1,18 @@
 <!-- App.svelte -->
 <script>
-    /* component logic will go here */
+    import { Router, Link, Route } from "svelte-navigator";
+    import Home from "./routes/Home.svelte";
+    import NotFound from "./routes/NotFound.svelte";
 </script>
-<style>
-    /* css will go here */
-    a {
-        color: red;
-    }
-</style>
-<div class="App">
-    <header class="App-header">
-        <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
-            Learn Sveltedfsasdasd
-        </a>
-    </header>
-</div>
+<Router>
+    <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+    </nav>
+    <div>
+        <Route path="/">
+            <Home />
+        </Route>
+        <Route component={NotFound} />
+    </div>
+</Router>

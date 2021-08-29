@@ -10,6 +10,7 @@
     "snowpack": "^3.3.7"
   },
   "dependencies": {
-    "svelte": "^3.42.4"
+    "svelte": "^3.42.4",
+    "svelte-navigator": "^3.1.5"
   }
 }
