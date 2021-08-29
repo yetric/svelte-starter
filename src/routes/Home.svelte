@@ -3,6 +3,5 @@
         color: gray;
     }
 </style>
-<div>
-    Home
-</div>
+
+<div>Home</div>
