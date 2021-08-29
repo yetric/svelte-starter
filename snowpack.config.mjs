@@ -5,7 +5,20 @@ export default {
     src: "/dist"
   },
   plugins: [
-    "@snowpack/plugin-svelte"
+    "@snowpack/plugin-svelte",
+      [
+        '@snowpack/plugin-webpack',
+        {
+          htmlMinifierOptions: {
+            collapseWhitespace: false,
+            removeComments: true,
+            removeEmptyAttributes: true,
+            removeRedundantAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+          }
+        }
+      ]
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
